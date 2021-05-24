@@ -73,8 +73,21 @@ const App = () => {
 					width='100%'
 					loop
 				/>
-				<div className='controls d-flex justify-content-between flex-column '>
-					<div className='middle-ctrl'></div>
+				<div
+					className={`${
+						ctrl.playing ? 'controls' : 'paused-controls'
+					} d-flex justify-content-between flex-column`}>
+					<div className={`middle-ctrl `}>
+						<h1 className={ctrl.playing ? 'd-none' : ''}>
+							Life's For The Living
+						</h1>
+						<p className={ctrl.playing ? 'd-none' : ''}>
+							Well grey clouds wrapped round the town like elastic Cars stood
+							like toys made of Taiwanese plastic The boy laughed at the spastic
+							dancing round in the rain While laundrettes cleaned clothes, high
+							heals rubbed toes Puddles splashed huddles of bus stop crows
+						</p>
+					</div>
 					<div className='bottom-ctrl'>
 						<input
 							type='range'

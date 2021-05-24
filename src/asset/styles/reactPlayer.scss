@@ -21,7 +21,8 @@ $primary: #e27c6b;
 	z-index: -1;
 }
 
-.controls {
+.controls,
+.paused-controls {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -36,12 +37,32 @@ $primary: #e27c6b;
 		);
 	}
 }
+.paused-controls {
+	background: #000000ba;
+	&:hover {
+		background: #000000ba;
+	}
+}
 .bottom-ctrl {
 	padding: 0 30px;
 }
 .vol-ctrl {
 	height: 50%;
 	margin-top: 4px;
+}
+.middle-ctrl {
+	color: white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 43px;
+	h1 {
+		color: $primary;
+	}
+	p {
+		font-size: small;
+	}
 }
 #seek-bar {
 	width: 100%;
