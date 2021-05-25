@@ -37,6 +37,7 @@ const VideoPlayer = ({ vid, config = {} }) => {
 				loop
 			/>
 			<div
+				// onClick={pauseHandler}
 				className={`${
 					ctrl.playing ? 'controls' : 'paused-controls'
 				} d-flex justify-content-between flex-column`}>
